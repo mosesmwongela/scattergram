@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         btnShareImage.setEnabled(false);
     }
 
+    //intent to share image with other apps
     private void shareImage() {
         View content = findViewById(R.id.ivScatteredImage);
         Bitmap bitmap = getBitmapFromView(content);
@@ -114,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         return returnedBitmap;
     }
 
+    //Asynctask to scatter the image
     private class ScatterImage extends AsyncTask<String, Integer, Bitmap> {
 
         protected void onPreExecute() {
@@ -160,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Fisher–Yates algorithm
     void shuffle(int[][] a) {
         Random random = new Random();
 
