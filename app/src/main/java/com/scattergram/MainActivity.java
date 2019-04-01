@@ -123,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
             btnScatterImage.setEnabled(false);
             ivScatteredImage.setVisibility(View.GONE);
             btnShareImage.setEnabled(false);
+            btnSelect.setEnabled(false);
         }
 
         protected Bitmap doInBackground(String... tasks) {
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             btnScatterImage.setEnabled(false);
             ivScatteredImage.setVisibility(View.VISIBLE);
             btnShareImage.setEnabled(true);
+            btnSelect.setEnabled(true);
         }
     }
 
